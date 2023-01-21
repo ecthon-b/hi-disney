@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { ICharacter } from '../../interfaces/character.interface';
 
+import './styled.module.css';
+
 export function Home() {
 
     const [characters, setCharacters] = useState <ICharacter[]>([]);
@@ -21,7 +23,7 @@ export function Home() {
         <div className="container">
             {characters.map((character, index) => (
                 <div className="card" key={index}>
-                    <img src={character.image} alt="" />
+                    <img src={character.imageUrl} alt="" />
                     <p>Nome: {character.name}</p>
                 </div>
             ))}

@@ -9,7 +9,7 @@ allies: string[];
 enemies: string[];
 sourceUrl: string
 name: string;
-image: string;
+imageUrl: string;
 createdAt: string;
 updatedAt: string;
 url: string;
